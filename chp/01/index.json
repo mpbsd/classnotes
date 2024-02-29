@@ -1,6 +1,7 @@
 {
   "disciplina": "Análise Real 1",
   "curso": "Bacharelado em Matemática",
+  "unidade": "IME",
   "ementa": "Conjuntos enumeráveis e não enumeráveis; Números reais; Sequências e Séries de Números Reais; Noções Topológicas na reta; Limite e Continuidade de funções.",
   "bibliografia": {
     "básica": [
@@ -14,5 +15,6 @@
       "bartle1976ElementsRealAnalysis",
       "avila2022IntroducaoAnaliseMatematica"
     ]
-  }
+  },
+  "ppc": "https://files.cercomp.ufg.br/weby/up/29/o/Resolucao_CEPEC_2019_1647.pdf"
 }
