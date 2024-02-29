@@ -1,3 +1,18 @@
 {
-  "name": "Espaços Espaços"
+  "disciplina": "Espaços Métricos",
+  "curso": "Bacharelado em Matemática",
+  "unidade": "IME",
+  "ementa": "Espaços métricos. Limite e continuidade. Conjuntos conexos. Espaços métricos completos. Espaços compactos.",
+  "bibliografia": {
+    "básica": [
+      "lima2020EspacosMetricos",
+      "lima2021ElementosTopologiaGeral"
+    ],
+    "complementar": [
+      "dugundji1989Topology",
+      "kelley2017GeneralTopology",
+      "munkres2000Topology"
+    ]
+  },
+  "ppc": "https://files.cercomp.ufg.br/weby/up/29/o/Resolucao_CEPEC_2019_1647.pdf"
 }
