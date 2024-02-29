@@ -1,10 +1,10 @@
 [
   {
     "id": "01",
-    "name": "Análise Real 1"
+    "disciplina": "Análise Real 1"
   },
   {
     "id": "02",
-    "name": "Espaços Métricos"
+    "disciplina": "Espaços Métricos"
   }
 ]
