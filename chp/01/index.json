@@ -1,3 +1,18 @@
 {
-  "name": "Análise Real 1"
+  "disciplina": "Análise Real 1",
+  "curso": "Bacharelado em Matemática",
+  "ementa": "Conjuntos enumeráveis e não enumeráveis; Números reais; Sequências e Séries de Números Reais; Noções Topológicas na reta; Limite e Continuidade de funções.",
+  "bibliografia": {
+    "básica": [
+      "lima2021CursoAnaliseVol1",
+      "figueiredo2008Analise",
+      "rudin2017PrinciplesMathematicalAnalysis"
+    ],
+    "complementar": [
+      "bartle2011IntroductionRealAnalysis",
+      "pugh2015RealMathematicalAnalysis",
+      "bartle1976ElementsRealAnalysis",
+      "avila2022IntroducaoAnaliseMatematica"
+    ]
+  }
 }
