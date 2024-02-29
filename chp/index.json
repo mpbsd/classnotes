@@ -1,10 +1,10 @@
-{
-  "chp": {
-    "01": {
-      "name": "Análise Real 1"
-    },
-    "02": {
-      "name": "Espaços Métricos"
-    }
+[
+  {
+    "id": "01",
+    "name": "Análise Real 1"
+  },
+  {
+    "id": "02",
+    "name": "Espaços Métricos"
   }
-}
+]
