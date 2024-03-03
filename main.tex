@@ -1,9 +1,24 @@
 \documentclass[a4paper,12pt]{book}
 
-\input{set/auth}
-\input{set/pkgs}
-\input{set/envs}
-\input{set/cmds}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{float}
+\usepackage{graphicx}
+\graphicspath{{./pic/}}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+
+\newcommand{\reals}{\mathbb{R}}
+\newcommand{\nonemptyset}[1]{\textup{#1}}
+\newcommand{\distance}{\textup{d}}
+
+\title{My Class Notes}
+\author{Marcelo Bezerra Barboza}
+\date{\today}
 
 \begin{document}
 
@@ -15,11 +30,11 @@
 
 \mainmatter
 
-\input{what.tex}
+\input{note.tex}
 
 \backmatter
 
-\bibliography{bib/main}
+\bibliography{ref/main}
 \bibliographystyle{plain}
 
 \end{document}
