@@ -7,14 +7,17 @@
 \usepackage{graphicx}
 \graphicspath{{./pic/}}
 \usepackage{hyperref}
+\usepackage{interval}
+\intervalconfig{soft open fences}
+\usepackage{mathtools}
 \usepackage[table]{xcolor}
 
-\newtheorem{definition}{Definition}
-\newtheorem{theorem}{Theorem}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
 
-\newcommand{\reals}{\mathbb{R}}
-\newcommand{\nonemptyset}[1]{\textup{#1}}
-\newcommand{\distance}{\textup{d}}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
 
 \title{My Class Notes}
 \author{Marcelo Bezerra Barboza}
@@ -30,7 +33,7 @@
 
 \mainmatter
 
-\input{note.tex}
+\input{data.tex}
 
 \backmatter
 
