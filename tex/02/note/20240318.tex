@@ -12,9 +12,9 @@
     \item
       $ d(x,y)=d(y,x) $;
     \item
-      $ d(x,z) \leqslant d(x,y) + d(y,z) $.
+      $ d(x,z) \leqslant d(x,y) + d(y,z) $,
   \end{enumerate}
-  for any $ x,y $ and $ z $ in $ M $. A metric space is an ordered pair $ (M,d) $ consisting of a set $ M $ and a metric $ d $ on $ M $.
+  for any $ x,y $ and $ z $ in $ M $. The pair $ (M,d) $ is a metric space.
 \end{definition}
 
 \subsection{Examples}\label{ssec:examples}
@@ -29,15 +29,5 @@
       1 & \text{if} & x\neq{y},
     \end{array}\right.
   \]
-  for every $ x,y $ in $ M $. Then, it's readily seen that $ (M,d) $ is a metric space.
-\end{example}
-
-\begin{example}\label{ex:bouded-functions}
-  Let $ X $ be any nonempty set. A function $ f:X\to\mathbb{R} $ is bounded if there exists a constant $ L_{f} > 0 $ such that $ \abs{f(x)} \leqslant L_{f} $ for every $ x $ in $ X $. Let $ B_{X} $ be the set of all bounded functions from $ X $ to $ \mathbb{R} $. Then, $ B_{X} $ is a real vector space with the operations given by
-  \[
-    \begin{array}{rlllllllllllcll}
-      B_{X}      & \times & {B_{X}} & \to & B_{X}, & (f,g) & \mapsto & f+g       & :X & \owns & x & \mapsto & f(x)+g(x)    & \in & \mathbb{R}, \\
-      \mathbb{R} & \times & {B_{X}} & \to & B_{X}, & (c,g) & \mapsto & c\cdot{g} & :X & \owns & x & \mapsto & c\cdot{g(x)} & \in & \mathbb{R},
-    \end{array}
-  \]
+  for every $ x,y $ in $ M $. It's readily seen that $ (M,d) $ is a metric space.
 \end{example}

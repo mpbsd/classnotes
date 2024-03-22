@@ -1,8 +1,6 @@
 \section{Normed Linear Spaces}\label{sec:normed-linear-spaces}
 
-
 \subsection{Norms}\label{subsec:norms}
-
 
 \begin{definition}\label{def:normed-linear-spaces}
   A norm on a complex vector space \(V\) is a function
@@ -14,11 +12,12 @@
     \item
       \(\norm{v}=0\iff{v=0}\);
     \item
-      \(\norm{\lambda{v}}=\abs{\lambda}\norm{v}\), \(\forall(\lambda,v)\in{\mathbb{C}\times{V}}\);
+      \(\norm{\lambda{v}}=\abs{\lambda}\norm{v}\);
     \item
-      \(\norm{v+w}\leqslant{\norm{v}+\norm{w}}\), \(\forall{v,w\in{V}}\);
+      \(\norm{v+w}\leqslant{\norm{v}+\norm{w}}\),
   \end{enumerate}
-  A normed linear space is an ordered pair \((V,\norm{\cdot})\) in which \(V\) is vector space and \(\norm{\cdot}\) is a norm on \(V\).
+  for every \(\lambda\in{\mathbb{C}}\) and every \(v,w\in{V}\). The pair
+  \((V,\norm{\cdot})\) is a normed linear space.
 \end{definition}
 
 \begin{example}\label{the-complex-field-is-a-normed-linear-space}
@@ -32,15 +31,53 @@
     \abs{\cdot}:\mathbb{C}\to\rinterval{0}{\infty},\quad
     a+bi\mapsto\sqrt{a^{2}+b^{2}},
   \]
-  is a norm on \(\mathbb{C}\). It's worth noticing that, for a complex number
-  of the form \(z=a+bi\), one has \(\abs{z}^{2}=z\cdot{\bar{z}}\) where
-  \(\bar{z}=a-bi\) stands for the complex conjugate of \(z\).
+  is a norm on \(\mathbb{C}\).
 \end{example}
 
+\begin{example}\label{ex:bouded-functions}
+  Let $ X $ be a nonempty set. Then, a function $ f:X\to\mathbb{C} $ is said to
+  be bounded if there exists a constant $ L_{f} > 0 $ such that $ \abs{f(x)}
+  \leqslant L_{f} $ for every $ x $ in $ X $. Let $ B_{X} $ be the set of all
+  bounded functions from $ X $ to $ \mathbb{C} $. Then, $ B_{X} $ is a complex
+  vector space with the operations of pointwise addition and multiplication by
+  scalars, since:
+  \[
+    \abs{(f+\lambda{g})(x)}
+    =
+    \abs{f(x)+\lambda{g(x)}}
+    \leqslant
+    \abs{f(x)}+\abs{\lambda}\abs{g(x)}
+    \leqslant
+    L_{f}+\abs{\lambda}L_{g},
+  \]
+  for every \(x\in{X}\), and the function
+  \[
+    \norm{\cdot}_{\infty}:B_{X}\to\mathbb{C},\quad
+    f\mapsto\sup\limits_{x\in{X}}\abs{f(x)},
+  \]
+  is a norm on \(B_{X}\). Given an integer \(n\geqslant{1}\), let \(B_{n}\) be
+  the set of all (bounded) functions from \(\left\{1,\ldots,n\right\}\) to
+  \(\mathbb{C}\). Then, the function
+  \[
+    \phi:
+    \left(
+    B_{n},
+    \norm{\cdot}_{\infty}
+    \right)
+    \to
+    \left(
+    \mathbb{C}^{n},
+    \norm{\cdot}^{n}_{\infty}
+    \right),
+    \quad
+    f\mapsto{(f(1),\ldots,f(n))},
+  \]
+  is a \(\mathbb{C}\)-linear isometry.
+\end{example}
 
-\subsection{\(p\)-Norm}\label{subsec:p-norm}
+\subsection{The \(p\)-Norm}\label{subsec:the-p-norm}
 
-In this section we closely follow~\cite{yet_another_proof_of_minkowskis_inequality}.
+In this section we closely follow the lines in~\cite{yet_another_proof_of_minkowskis_inequality}.
 
 \begin{definition}
   Let \(p\geqslant{1}\) be given. Then, the \(p\)-norm on \(\mathbb{C}^{n}\)
@@ -53,11 +90,11 @@ In this section we closely follow~\cite{yet_another_proof_of_minkowskis_inequali
   for all \(z=(z_{1},\ldots,z_{n})\in\mathbb{C}^{n}\).
 \end{definition}
 
-Notice that
+Notice that functions \(\norm{\cdot}^{1}_{2}\) and \(\abs{\cdot}\) are one and the same, since:
 \[
-  \forall{a+bi\in\mathbb{C}}:\quad{\norm{a+bi}^{1}_{2}=\sqrt{a^{2}+b^{2}}=\abs{a+bi}},
+  \norm{z}^{1}_{2}=\sqrt[2]{\abs{z}^{2}}=\abs{z},
 \]
-that is, \(\norm{\cdot}^{1}_{2}=\abs{\cdot}\) is the absolute value of complex numbers.
+for every \(z\in{\mathbb{C}}\).
 
 \begin{proposition}\label{proposition:the-p-norm-is-in-fact-a-norm}
   The function \(\norm{\cdot}^{n}_{p}\) is a norm on \(\mathbb{C}^{n}\), for every \(p\geqslant{1}\).
@@ -71,9 +108,10 @@ that is, \(\norm{\cdot}^{1}_{2}=\abs{\cdot}\) is the absolute value of complex n
     \item
       \(\norm{v}=0\iff{v=0}\);
     \item
-      \(\norm{\lambda{v}}=\abs{\lambda}\norm{v}\), \(\forall(\lambda,v)\in\mathbb{C}\times{V}\).
+      \(\norm{\lambda{v}}=\abs{\lambda}\norm{v}\),
   \end{enumerate}
-  Then, \(\norm{\cdot}\) is a norm on \(V\) whenever the unit ball
+  for all \(\lambda\in{\mathbb{C}}\) and all \(v\in{V}\). Then,
+  \(\norm{\cdot}\) is a norm on \(V\) provided that
   \[
     B=\left\{z\in{V}:\norm{z}\leqslant{1}\right\},
   \]
@@ -261,7 +299,7 @@ that is, \(\norm{\cdot}^{1}_{2}=\abs{\cdot}\) is the absolute value of complex n
   by Lemma~\ref{lemma:two-concave-functions}, \(k\) is concave and decreases.
 \end{proof}
 
-\subsection{\(\infty\)-Norm}\label{subsec:infty-norm}
+\subsection{The \(\infty\)-Norm}\label{subsec:the-infty-norm}
 
 \begin{definition}
   The \(\infty\)-norm on \(\mathbb{C}^{n}\) is the function given by
@@ -300,6 +338,6 @@ that is, \(\norm{\cdot}^{1}_{2}=\abs{\cdot}\) is the absolute value of complex n
   \[
     \lim\limits_{p\to\infty}\norm{z}^{n}_{p}=\norm{z}^{n}_{\infty},
   \]
-  for each \(z\in\mathbb{C}^{n}\), since
+  for each \(z\in\mathbb{C}^{n}\) since
   \(\lim\limits_{p\to\infty}\sqrt[p]{n}=1\).
 \end{proof}
